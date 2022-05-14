@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<form name="loginForm" method="post" action="login.php">
+<table width="35%" bgcolor="0099CC" align="center">
+
+<tr>
+<td colspan=2 bgcolor="yellow"><center><font size=4><b>Order Now</b></font></center></td>
+</tr>
+
+<tr>
+<td bgcolor="yellow">Email:</td>
+<td><input type="text" size=35 name="userid"></td>
+</tr>
+
+<tr>
+    <td bgcolor="yellow">Food name:</td>
+    <td><input type="text" size=35 name="userid"></td>
+    </tr>
+
+<tr>
+<td bgcolor="yellow">Mobile No:</td>
+<td><input type="Password" size=35 name="pwd"></td>
+</tr>
+
+<tr>
+    <td bgcolor="yellow">Address:</td>
+    <td><input type="text" size=35 name="userid"></td>
+    </tr>
+
+    <tr>
+        <td bgcolor="yellow">description:</td>
+        <td><input type="text" size=35  name="userid"></td>
+        </tr>
+
+<tr>
+<td><input type="Reset"></td>
+<td><a href="file:///C:/Users/Lenovo/Desktop/welcome1.html"><input type="submit" onclick="return check(this.form)" value="Login"></a></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "" && form.pwd.value == "")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
